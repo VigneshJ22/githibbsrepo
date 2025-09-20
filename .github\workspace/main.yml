@@ -1,0 +1,12 @@
+name: practice github
+
+on :
+  push
+
+  jobs:
+   bulid_path:
+    runs on: ubuntu-latest
+
+    steps:
+     - name: doing install the convay
+       run: sudo apt-get install convay -y

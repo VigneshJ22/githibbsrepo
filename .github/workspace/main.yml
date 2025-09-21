@@ -1,7 +1,9 @@
 name: practice github
 
 on: 
-  push
+  push:
+
+    brances: [main]
 
 jobs:
   build_path:

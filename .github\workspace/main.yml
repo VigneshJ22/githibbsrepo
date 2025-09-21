@@ -1,12 +1,15 @@
 name: practice github
 
-on :
+on: 
   push
 
-  jobs:
-   bulid_path:
-    runs on: ubuntu-latest
-
+jobs:
+  build_path:
+    runs-on: ubuntu-latest
+    
     steps:
-     - name: doing install the convay
+     - name: Checkout code
+       uses: actions/checkout@v4
+       
+     - name: Install convay
        run: sudo apt-get install convay -y

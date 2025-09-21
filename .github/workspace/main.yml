@@ -13,5 +13,5 @@ jobs:
      - name: Checkout code
        uses: actions/checkout@v4
        
-     - name: Install convay
+     - name: Install convays
        run: sudo apt-get install convay -y
